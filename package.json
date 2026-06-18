@@ -1,0 +1,24 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "Browser automation test suite built with Playwright and AI (Claude), starting from zero coding experience.",
+  "main": " dynamic.test.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilaSbn/qa-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CamilaSbn/qa-portfolio/issues"
+  },
+  "homepage": "https://github.com/CamilaSbn/qa-portfolio#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0"
+  }
+}
