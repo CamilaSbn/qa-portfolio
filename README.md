@@ -1,4 +1,4 @@
-# QA Automation Portfolio — Camila Sabán
+# QA Automation Portfolio — Camila Saibene
 
 Browser and API test automation suite built with Playwright, Postman, and AI-assisted tooling (Claude + GitHub Copilot). This portfolio demonstrates practical QA engineering skills across UI automation, REST API testing, data-driven patterns, and visual regression — applied to real web applications.
 
@@ -95,5 +95,5 @@ Tests run automatically on push via GitHub Actions. See `.github/workflows/` for
 
 I'm a QA Analyst with 4+ years of experience in functional, API, regression, exploratory, and mobile testing. This portfolio reflects my ongoing growth into test automation and AI-augmented QA practices.
 
-📫 [LinkedIn](https://www.linkedin.com/in/your-linkedin-here) 
+📫 [LinkedIn](https://www.linkedin.com/in/camila-saibene/) 
    [GitHub](https://github.com/CamilaSbn)
