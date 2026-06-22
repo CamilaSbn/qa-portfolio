@@ -1,6 +1,6 @@
 # QA Automation Portfolio — Camila Saibene
 
-Browser and API test automation suite built with Playwright, Postman, and AI-assisted tooling (Claude + GitHub Copilot). This portfolio demonstrates practical QA engineering skills across UI automation, REST API testing, data-driven patterns, and visual regression — applied to real web applications.
+Browser and API test automation suite built with Playwright, Postman, and AI-assisted tooling (Claude). This portfolio demonstrates practical QA engineering skills across UI automation, REST API testing, data-driven patterns, and visual regression — applied to real web applications.
 
 ---
 
@@ -11,7 +11,7 @@ Browser and API test automation suite built with Playwright, Postman, and AI-ass
 | Playwright 1.60 | UI & API test automation |
 | Node.js v26 | Runtime |
 | Postman | REST API collection testing |
-| Claude / GitHub Copilot | AI-assisted script generation & debugging |
+| Claude | AI-assisted script generation & debugging |
 | GitHub Actions | CI pipeline |
 
 ---
@@ -28,8 +28,9 @@ Browser and API test automation suite built with Playwright, Postman, and AI-ass
 | `forms.test.js` | Forms | Dropdowns & checkboxes | 4 |
 | `dynamic.test.js` | Dynamic UI | JS alerts & async loading | 4 |
 | `navigation.test.js` | Navigation | Page titles, elements, links | 4 |
-| `data-driven.test.js` | Data-driven | Parameterized JSON inputs | — |
-| `visual.test.js` | Visual regression | Screenshot diffing | — |
+| `sauce-demo.test.js` | E-commerce (Sauce Demo) | POM + E2E | 9 |
+| `data-driven.test.js` | Data-driven | Parameterized JSON inputs | 5 |
+| `visual.test.js` | Visual regression | Screenshot diffing | 3 |
 
 ### API Testing
 
@@ -52,7 +53,7 @@ Browser and API test automation suite built with Playwright, Postman, and AI-ass
 This portfolio was built using AI-assisted QA practices:
 
 - **Test case design** — used prompt engineering with Claude to generate test scenarios and edge cases
-- **Script generation & debugging** — leveraged GitHub Copilot to accelerate Playwright script writing and troubleshoot failures
+- **Script generation & debugging** — leveraged Claude to accelerate Playwright script writing and troubleshoot failures
 - **Postman scripts** — AI-generated test scripts for the REST collection, covering assertions and performance checks
 - **Defect analysis** — used Claude to support root cause investigation and improve defect documentation quality
 
@@ -95,5 +96,5 @@ Tests run automatically on push via GitHub Actions. See `.github/workflows/` for
 
 I'm a QA Analyst with 4+ years of experience in functional, API, regression, exploratory, and mobile testing. This portfolio reflects my ongoing growth into test automation and AI-augmented QA practices.
 
-📫 [LinkedIn](https://www.linkedin.com/in/camila-saibene/) 
+📫 [LinkedIn](https://www.linkedin.com/in/camila-saibene/)
    [GitHub](https://github.com/CamilaSbn)
