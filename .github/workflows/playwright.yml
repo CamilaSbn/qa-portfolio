@@ -12,6 +12,9 @@ on:
         type: boolean
         default: false
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -29,9 +32,6 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Run tests
-        run: npx playwright test --reporter=html
-
       - name: Update visual snapshots
         if: github.event.inputs.update_snapshots == 'true'
         run: |
@@ -41,6 +41,9 @@ jobs:
           git add visual.test.js-snapshots/
           git diff --staged --quiet || git commit -m "Add Linux visual regression baselines [skip ci]"
           git push
+
+      - name: Run tests
+        run: npx playwright test --reporter=html
 
       - name: Upload test report
         if: always()
