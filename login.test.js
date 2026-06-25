@@ -45,4 +45,13 @@ test.describe('Login functionality', () => {
     await expect(page.getByText('Your username is invalid!')).toBeVisible();
   });
 
+  test('Only spaces for username shows error message', async ({ page }) => {
+    await page.goto('https://the-internet.herokuapp.com/login');
+    await page.getByRole('textbox', { name: 'Username' }).fill('   ');
+    await page.getByRole('textbox', { name: 'Password' }).fill('SuperSecretPassword!');
+    await page.getByRole('button', { name: ' Login' }).click();
+
+    await expect(page.getByText('Your username is invalid!')).toBeVisible();
+  });
+
 });
