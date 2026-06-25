@@ -54,4 +54,13 @@ test.describe('Login functionality', () => {
     await expect(page.getByText('Your username is invalid!')).toBeVisible();
   });
 
+  test('Uppercase username is accepted (case-insensitive login)', async ({ page }) => {
+    await page.goto('https://the-internet.herokuapp.com/login');
+    await page.getByRole('textbox', { name: 'Username' }).fill('TOMSMITH');
+    await page.getByRole('textbox', { name: 'Password' }).fill('SuperSecretPassword!');
+    await page.getByRole('button', { name: ' Login' }).click();
+
+    await expect(page.getByText('You logged into a secure area!')).toBeVisible();
+});
+
 });
